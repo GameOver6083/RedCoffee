@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>RedCoffee</title> <link rel="mask-icon" href="https://www.freelogodesign.org/file/app/client/thumb/75025ea9-9318-4d75-b943-44885a1e651a_200x200.png?1606693549954" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://www.freelogodesign.org/file/app/client/thumb/75025ea9-9318-4d75-b943-44885a1e651a_200x200.png?1606693549954">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+		<a href "#"><img src="https://www.freelogodesign.org/file/app/client/thumb/60695034-140e-4701-81dd-fa27e7682516_200x200.png?1606628943287" alt="Ding Logo"></a>
+		    <h3 class="w3-padding-48"; style="font-size: 25px"><b>RedCoffee</b>
+		</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>  
+    <a href="#finance" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Financial Managing</a> 
+    <a href="#background" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Background</a> 
+    <a href="#result" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Result</a>
+	 <a href="#bib" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Citations</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>RedCoffee</span>
+</header>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+	<br>
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome to the home of RedCoffee.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>The Revolution of Financial Managing.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="finance" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>The Importance Of Financial Managing.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Financial managers are critical to the financial health of a company. They create financial reports, develop strategies, plans, and long term financial goals of their organization. What if a program determined strategies for investment and put expenses in a different perspective? What if this program could possibly be used at a corporate level and available for personal use? Furthermore, what general advancements could this program have that would be beneficial in the technology and mathematical field?
+</p>
+    <p>Financial organization has been difficult, even at a corporate level. Learning to keep track of your expenses is a fundamental part of any individual's life and finances. It may help to determine how much one has to save to pay off debts or loans. A sound financial plan can help accumulate savings for life events in the future. Furthermore, keeping tabs on personal expenses will help to establish what is needed to be financially sound in the future.
+
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="background" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Background And Process.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Behind RedCoffee.</p>
+    <p>
+The program is programmed with Java. The program requests for the user’s salary and current debts/loans. It then saves that information and requests for the amount that the user spends in each category: Auto, Bills/Utilities, Education, Food and drink, Gas, Groceries, Health, Shopping, Travel, Personal, Miscellaneous. Every investment falls into these eleven categories. Then, based on the rank of importance given by the user, it should output the amount of money the user can take out of certain categories and either save or use them in personal investments. All of this is protected with a login the user may set themselves. One the main issues that first came up was making the program determine the amount of money to be taken out of each category based on the importance and the amount of the user’s salary it consists of. During the first couple of tests, it only led to failure, usually outputting multiple millions of dollars, which was much greater than the salary inputted. This was fixed by adding a new data type to the program, which was “float”. This data type allowed the program to turn quotients to decimals and multiply and divide them, allowing more precise answers, which would be accurate down to the cent. To correspond with the ranks, however, was fixed using if, else if, and else statements, for the ranks 1, 2, 3 or importance. Based on the percentage of the salary, for rank one, which was least important, it took out 45% of the total invested amount of money in that category. If the user disagrees with this amount, it will lower it 5-15% percent. This money may be invested in personal uses or be saved for future use. For rank two, 30 percent is taken out of the total amount, still changeable by the user. Lastly, rank three, one of the most important categories for the user only advises to take out 15% out of that category. This amount may be reduced to 0% by the user. Furthermore, the user interface had to be easy to use and be able to accept and understand any type of input the user may input. This includes numbers in place of letters and vice versa. This can easily be done using conditional statements: if, else. For example, if a user inputs a string(letters), the program should output “Those are letters!” else(anything other than letters), output “Those aren’t letters!” This can be used on a more advanced level in determining whether an integer has decimals or not, which would prove to be quite useful in this program. Finally, on approximately the 1,034,299th compile and execution, the program outputted the amount of savings and investments needed in each category.
+</p><p>
+With the many roles small business owners and even everyday managers take on, it’s often difficult to find the time to sit down and focus on the business financial plans. This program, using math, logic, and the magic of computer programming would be incredibly useful in keeping track of finances and aid decisions in investments. This greatly helped me improve my problem solving skills. My understanding and love for mathematics has evolved greatly. I love the way concepts are intricately linked with each other, from concepts such as addition to multiplication, all the way to derivatives and limits in programming. Mathematics is one of the only fields of study known to have connections to almost all other fields of study, and seeing how is something I love to do, especially in computer programming. An improvement that may be implemented to the program in the future is creating a website that allows the user to store past expenses in a database and view back on his investment detail, including much friendlier user experience and interface.
+</p>
+  
+	  <div class="w3-container" id="result" style="margin-top:75px">
+		<br>
+	<br>
+
+    <h1 class="w3-xxxlarge w3-text-red"><b>The Result.</b></h1>
+	<hr style="width:50px;border:5px solid red" class="w3-round">
+	<p>
+		<b>HTML/CSS/JAVASCRIPT code:</b> is available <a href="https://github.com/GameOver2263/RedCoffee" target="_blank">here.</a> Click "index.html" to view the HTML code.
+		<br>
+		<b>JAVA code:</b> is available <a href="https://github.com/GameOver2263/RedCoffeeJava" target="_blank">here.</a> Click "Main.java" to view the Java code.  
+	</p>
+	<p>
+		<br>
+		<br>
+		<b>Instructions</b>
+		<br>
+		Tap the run button at the top of the program and the black console will run RedCoffee!
+	</p>
+		  <br>
+		  <p style="font-weight: 950">
+		Login:
+	</p>
+	<p>
+		Username: CodeDay (C and D capitlized)</p>
+		<p>Password: John (J capitalized)
+	</p>
+	<iframe height="600px" width="100%" src="https://repl.it/@DigitalRipple/RedCoffee-V2-1?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+
+<div class="w3-container" id="bib" style="margin-top:75px">
+		<br>
+	<br>
+
+    <h1 class="w3-xxxlarge w3-text-red"><b>Citations.</b></h1>
+	<hr style="width:50px;border:5px solid red" class="w3-round">
+	<p> 
+Juneja, Prachi. “MSG Management&nbsp;&nbsp;Study&nbsp;&nbsp;Guide.” 
+<br>
+<br>
+Financial Management - Meaning, Objectives and Functions Prachi Juneja, 2019, www.managementstudyguide.com/financial-management.htm. 
+<br>
+<br>
+Klimashousky, Danielle. “Making an Investment Plan: A Step-by-Step Guide.” SmartAsset, SmartAsset, 28 Oct. 2020, smartasset.com/investing/how-to-make-an-investment-plan.
+<br>
+<br>
+Harness, Jill. “What Is the Goal of a Financial Manager Within a Corporation?” Bizfluent, 11 Feb. 2019, bizfluent.com/info-12096172-goal-financial-manager-within-corporation.html. 
+
+</p>
+</div>
+
+
+<br>
+<br>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
